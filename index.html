@@ -13,5 +13,30 @@
         <li><a href="https://docs.google.com/spreadsheets/d/12w6_y7ob5QohqBK2vBt7CdxsQYuI7-sasGb-Hkb9yNg/edit#gid=0" target="_blank">Krak Reserves</a></li>
         <li><a href="https://docs.google.com/spreadsheets/d/1U9PzbyBNoG8uZ8nOyPUMuKJSh6_MqKs6nClxbcREQNc/edit#gid=0" target="_blank">Monster Yury's trading</a></li>
     </ul>
+
+    <h1>Stock Price Charts for AAPL and TSLA</h1>
+    
+    <div class="tradingview-widget-container">
+        <div id="tradingview_aapl"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+        <script type="text/javascript">
+            new TradingView.widget(
+            {
+                "width": 600,
+                "height": 400,
+                "symbol": "NASDAQ:AAPL",
+                "interval": "D",
+                "timezone": "Etc/UTC",
+                "theme": "light",
+                "style": "1",
+                "locale": "en",
+                "toolbar_bg": "#f1f3f6",
+                "enable_publishing": false,
+                "allow_symbol_change": true,
+                "container_id": "tradingview_aapl"
+            }
+            );
+        </script>
+    </div>
 </body>
 </html>
