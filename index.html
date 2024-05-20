@@ -122,5 +122,87 @@
             </script>
         </div>
     </div>
+
+    <h1>Crypto Price Charts for BTC, ETH, UNI, FIL</h1>
+    <div class="chart-container">
+        <div class="tradingview-widget-container">
+            <div id="tradingview_btc"></div>
+            <script type="text/javascript">
+                new TradingView.widget({
+                    "width": 600,
+                    "height": 400,
+                    "symbol": "BINANCE:OSMOUSDT",
+                    "interval": "D",
+                    "timezone": "Etc/UTC",
+                    "theme": "light",
+                    "style": "1",
+                    "locale": "en",
+                    "toolbar_bg": "#f1f3f6",
+                    "enable_publishing": false,
+                    "allow_symbol_change": true,
+                    "container_id": "tradingview_btc"
+                });
+            </script>
+        </div>
+        <div class="tradingview-widget-container">
+            <div id="tradingview_eth"></div>
+            <script type="text/javascript">
+                new TradingView.widget({
+                    "width": 600,
+                    "height": 400,
+                    "symbol": "BINANCE:ETHUSDT",
+                    "interval": "D",
+                    "timezone": "Etc/UTC",
+                    "theme": "light",
+                    "style": "1",
+                    "locale": "en",
+                    "toolbar_bg": "#f1f3f6",
+                    "enable_publishing": false,
+                    "allow_symbol_change": true,
+                    "container_id": "tradingview_eth"
+                });
+            </script>
+        </div>
+        <div class="tradingview-widget-container">
+            <div id="tradingview_uni"></div>
+            <script type="text/javascript">
+                new TradingView.widget({
+                    "width": 600,
+                    "height": 400,
+                    "symbol": "BINANCE:PYTHUSDT",
+                    "interval": "D",
+                    "timezone": "Etc/UTC",
+                    "theme": "light",
+                    "style": "1",
+                    "locale": "en",
+                    "toolbar_bg": "#f1f3f6",
+                    "enable_publishing": false,
+                    "allow_symbol_change": true,
+                    "container_id": "tradingview_uni"
+                });
+            </script>
+        </div>
+        <div class="tradingview-widget-container">
+            <div id="tradingview_fil"></div>
+            <script type="text/javascript">
+                new TradingView.widget({
+                    "width": 600,
+                    "height": 400,
+                    "symbol": "BINANCE:FILUSDT",
+                    "interval": "D",
+                    "timezone": "Etc/UTC",
+                    "theme": "light",
+                    "style": "1",
+                    "locale": "en",
+                    "toolbar_bg": "#f1f3f6",
+                    "enable_publishing": false,
+                    "allow_symbol_change": true,
+                    "container_id": "tradingview_fil"
+                });
+            </script>
+        </div>
+    </div>
+
+
 </body>
 </html>
