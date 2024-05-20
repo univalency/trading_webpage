@@ -13,6 +13,8 @@
         }
         .tradingview-widget-container {
             margin: 10px;
+            width: 600px;
+            height: 400px;
         }
     </style>
 </head>
@@ -69,6 +71,52 @@
                     "enable_publishing": false,
                     "allow_symbol_change": true,
                     "container_id": "tradingview_tsla"
+                }
+                );
+            </script>
+        </div>
+
+        <div class="tradingview-widget-container">
+            <div id="tradingview_nvda"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+            <script type="text/javascript">
+                new TradingView.widget(
+                {
+                    "width": 600,
+                    "height": 400,
+                    "symbol": "NASDAQ:NVDA",
+                    "interval": "D",
+                    "timezone": "Etc/UTC",
+                    "theme": "light",
+                    "style": "1",
+                    "locale": "en",
+                    "toolbar_bg": "#f1f3f6",
+                    "enable_publishing": false,
+                    "allow_symbol_change": true,
+                    "container_id": "tradingview_nvda"
+                }
+                );
+            </script>
+        </div>
+
+        <div class="tradingview-widget-container">
+            <div id="tradingview_msft"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+            <script type="text/javascript">
+                new TradingView.widget(
+                {
+                    "width": 600,
+                    "height": 400,
+                    "symbol": "NASDAQ:MSFT",
+                    "interval": "D",
+                    "timezone": "Etc/UTC",
+                    "theme": "light",
+                    "style": "1",
+                    "locale": "en",
+                    "toolbar_bg": "#f1f3f6",
+                    "enable_publishing": false,
+                    "allow_symbol_change": true,
+                    "container_id": "tradingview_msft"
                 }
                 );
             </script>
