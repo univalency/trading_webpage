@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Links to Google Sheets</title>
+    <style>
+        .chart-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .tradingview-widget-container {
+            margin: 10px;
+        }
+    </style>
 </head>
 <body>
     <h1>Links to Google Sheets</h1>
@@ -16,27 +27,52 @@
 
     <h1>Stock Price Charts for AAPL and TSLA</h1>
     
-    <div class="tradingview-widget-container">
-        <div id="tradingview_aapl"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-        <script type="text/javascript">
-            new TradingView.widget(
-            {
-                "width": 600,
-                "height": 400,
-                "symbol": "NASDAQ:AAPL",
-                "interval": "D",
-                "timezone": "Etc/UTC",
-                "theme": "light",
-                "style": "1",
-                "locale": "en",
-                "toolbar_bg": "#f1f3f6",
-                "enable_publishing": false,
-                "allow_symbol_change": true,
-                "container_id": "tradingview_aapl"
-            }
-            );
-        </script>
+    <div class="chart-container">
+        <div class="tradingview-widget-container">
+            <div id="tradingview_aapl"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+            <script type="text/javascript">
+                new TradingView.widget(
+                {
+                    "width": 600,
+                    "height": 400,
+                    "symbol": "NASDAQ:AAPL",
+                    "interval": "D",
+                    "timezone": "Etc/UTC",
+                    "theme": "light",
+                    "style": "1",
+                    "locale": "en",
+                    "toolbar_bg": "#f1f3f6",
+                    "enable_publishing": false,
+                    "allow_symbol_change": true,
+                    "container_id": "tradingview_aapl"
+                }
+                );
+            </script>
+        </div>
+
+        <div class="tradingview-widget-container">
+            <div id="tradingview_tsla"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+            <script type="text/javascript">
+                new TradingView.widget(
+                {
+                    "width": 600,
+                    "height": 400,
+                    "symbol": "NASDAQ:TSLA",
+                    "interval": "D",
+                    "timezone": "Etc/UTC",
+                    "theme": "light",
+                    "style": "1",
+                    "locale": "en",
+                    "toolbar_bg": "#f1f3f6",
+                    "enable_publishing": false,
+                    "allow_symbol_change": true,
+                    "container_id": "tradingview_tsla"
+                }
+                );
+            </script>
+        </div>
     </div>
 </body>
 </html>
